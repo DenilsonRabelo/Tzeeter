@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: rgb(15, 20, 25);
+}
+
+
+.nav-bar {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(15, 20, 25);
+    padding-left: 10px;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.nav-bar ul li:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 15px;
+}
+
+
+
+.info > li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+}
+
+.info > li a:hover {
+    border-bottom: 1px solid black;
+}
+
+
+
+
+.publicacoes  {
+    list-style: none;
+}
+
+.publicacoes a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.publicacoes a:hover {
+    background-color:rgba(15, 25, 20, 0.1);
+}
+
+
+
+.statistics li a {
+    color: rgb(83, 100, 113);
+}
+
+.statistics li a {
+    text-decoration: none;
+}
+
+.statistics li a span:nth-child(1){
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+
+.statistics li a:hover{
+    border-bottom: 1px solid black;
+}
+
+.reacoes a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    font-size: 18px;
+}
+
+
+
+.comentario svg:hover, .comentario:hover {
+    fill:  rgba(29, 155, 240, 1);
+    color:  rgba(29, 155, 240, 1);
+}
+
+.partilhar svg:hover, .partilhar:hover {
+    fill: rgba(0, 186, 124, 1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.coracao svg:hover, .coracao:hover {
+    fill: rgba(249, 24, 128, 1);
+    color: rgba(249, 24, 128, 1);
+}
+
+.baixar svg:hover, .baixar:hover {
+    fill: rgba(29, 155, 240, 1);
+    color: rgba(29, 155, 240, 1);
+}
+
+
+#id {
+    color: rgb(15, 20, 25);
+}
+
+#nick {
+    color: rgb(83, 100, 113);
+}
+
+.biografia {
+    color: rgb(15, 20, 25);
+}
+
+.date {
+    color: rgb(83, 100, 113);
+}
+
+.tweet {
+    color: rgb(15, 20, 25);
+}
