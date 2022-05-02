@@ -6,28 +6,79 @@
 
 body {
     background-color: white;
-    color: rgb(15, 20, 25);
 }
 
 
-.nav-bar {
-    width: 100%;
-    padding: 20px;
+
+.car {
+    padding-top: 20px;
 }
 
+.form-control {
+    width: 100px;
+}
+
+.titulo-card {
+    padding-bottom: 20px;
+}
+
+.tt:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+}
+
+.pae {
+    padding-left: 10px;
+}
+
+.img-logo {
+    padding-bottom: 10px;
+}
+
+
+.img2 {
+    width: 48px;
+    height: 48px;
+}
+
+.img-perfil {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+}
 
 .nav-bar ul li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 800;
     color: rgb(15, 20, 25);
-    padding-left: 10px;
+    
 }
+
+
+
+.nav-bar ul li a i {
+    margin-right: 20px;
+}
+
 
 .nav-bar ul li {
     list-style: none;
     text-decoration: none;
+    margin-bottom: 20px;
 }
+
+.conteiner-perfil {
+    border-left: solid 1px rgba(15, 25, 20, 0.1);
+    border-right: solid 1px rgba(15, 25, 20, 0.1);
+}
+
 
 
 .nav-bar ul li:hover {
@@ -35,28 +86,54 @@ body {
     border-radius: 15px;
 }
 
+.info, .statistics {
+    padding-left: 0rem ;
+    margin-bottom: 0rem;
+    
+}
+
+.info li, .statistics li {
+    padding-right: 1rem;
+}
 
 
-.info > li a{
+
+.info > li a {
     list-style: none;
     text-decoration: none;
     color: rgb(83, 100, 113);
 }
+
+
 
 .info > li a:hover {
     border-bottom: 1px solid black;
 }
 
 
+.tt { 
+    border-top: solid 1px rgba(15, 25, 20, 0.1);
+    padding-bottom: 30px;
+}
+
+.png {
+    margin-top: 20px;
+}
+
 
 
 .publicacoes  {
     list-style: none;
+
+    box-shadow: 1px 1px 4px black;
 }
 
 .publicacoes a {
     color: rgb(15, 20, 25);
     text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
 .publicacoes a:hover {
@@ -65,12 +142,12 @@ body {
 
 
 
-.statistics li a {
-    color: rgb(83, 100, 113);
-}
 
-.statistics li a {
+
+.statistics li a, .info li a  {
     text-decoration: none;
+    color: rgb(83, 100, 113) !important;
+    font-weight: 500 !important;
 }
 
 .statistics li a span:nth-child(1){
@@ -82,12 +159,23 @@ body {
     border-bottom: 1px solid black;
 }
 
+.reacoes a i {
+    padding-right: 10px;
+}
+
+.inp {
+    padding-bottom: 10px;
+}
+
 .reacoes a{
     list-style: none;
+    padding-top: 10px;
+    padding-left: 20px;
     text-decoration: none;
     color: rgb(83, 100, 113);
     font-size: 18px;
 }
+
 .comentario:hover:nth-child(1) {
     fill:  rgba(29, 155, 240, 1);
     color:  rgba(29, 155, 240, 1);
@@ -122,9 +210,11 @@ body {
 }
 
 .date {
+    padding-top: 20px;
     color: rgb(83, 100, 113);
 }
 
 .tweet {
     color: rgb(15, 20, 25);
+    padding-left: 25px;
 }
