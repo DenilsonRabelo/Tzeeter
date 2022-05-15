@@ -240,3 +240,7 @@ body {
 .btn-mergem {
     margin-right: 10px;
 }
+
+.edit {
+    border-radius: 20px;
+}
