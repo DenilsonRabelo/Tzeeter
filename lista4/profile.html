@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzeeter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <ul class="itens-nav col-xl-3 col-lg-1 col-sm-2 col-md-1 col-2" >
+                <img class="img-logo" src="./tiziu.png" alt="">
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-house-door-fill "></i>Home</a>
+                    <a class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-house-door-fill"></i></a>
+                </li>
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-search"></i>Explore</a>
+                    <a  class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-search"></i></a>
+                </li>
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-bell"></i>Notifications</a>
+                    <a  class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-bell"></i></a>
+                </li>
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-chat-dots"></i>Messages</a>
+                    <a  class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-chat-dots"></i></a>
+                </li>
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-bookmark-plus"></i>Bookmarks</a>
+                    <a  class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-bookmark-plus"></i></a>
+                </li>
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-list"></i>Lists</a>
+                    <a  class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-list"></i></a>
+                </li>
+                <li>
+                    <a class="d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block" href="#"><i class="bi bi-person"></i>Profile</a>
+                    <a  class="d-xl-none  d-xl-block d-lg-block pae" href="#"><i class="bi bi-person"></i></a>
+                </li>
+
+                <div>
+                    <button  type="button" class="btn btn-primary rounded-pill d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block d-lg-none d-xl-block">Edit profile</button>
+                    <button  type="button" class="btn btn-primary rounded-circle  d-xl-none  d-xl-block d-lg-block"><i class="bi bi-twitter"></i></button>
+                </div>
+            </ul>
+            <div class="conteiner-perfil col-xl-6 col-lg-7 col-md-8  col-sm-9 col-9 d-flex flex-row">
+            <div class="position-relative m-3">
+                <img class="img-perfil rounded-circle" 
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fbed0951-d861-4707-bdc2-0ae36a7b1d2a/ddw1bz5-d0166344-3c6c-4aa0-b825-7955da7a64f5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZiZWQwOTUxLWQ4NjEtNDcwNy1iZGMyLTBhZTM2YTdiMWQyYVwvZGR3MWJ6NS1kMDE2NjM0NC0zYzZjLTRhYTAtYjgyNS03OTU1ZGE3YTY0ZjUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.t45B4sO1qBYUQDKKHKdg0NsG3WBSVnbAKbNyG0THVDI"
+                    alt="foto de perfil">
+            </div>
+            <div>
+                <div class="formulario">
+                    <form action="">
+                        <textarea  class="comment" placeholder="O que você está pensando" name="Input" id="texto" cols="40" rows="3" ></textarea>
+                    </form>
+                </div>
+                <div class="texto-reply-principal">
+                    <a class="texto-reply1" href="#"><h6 class="no-wrap inline texto-reply"><i class="bi bi-globe"></i> Evaryone can reply one</h6></a>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                        <ul class="d-flex flex-row profi justify-content-between">
+                            <li><a href="#"><i class="bi bi-card-image"></i></a></li>
+                            <li><a href="#"><i class="bi bi-file-earmark"></i></a></li>
+                            <li><a href="#"><i class="bi bi-emoji-laughing"></i></a></li>
+                            <li><a href="#"><i class="bi bi-bar-chart"></i></a></li>
+                            <li><a href="#"><i class="bi bi-calendar"></i></a></li>
+                            <li ><a href="#"><i class="bi bi-geo-alt"></i></a></li>
+                        </ul>
+                        <ul class="d-flex profi-2 align-items-center flex-row justify-content-between">
+                            <li><span class="tamanhoAgora"></span></li>
+                            <li><a href=""><i class="bi bi-three-dots-vertical"></i></a></li>
+                            <li><a href=""></a></li>
+                            <li><button type="button" class="btn btn-primary btn-sm rounded">Enviar</button></li>
+                        </ul>
+                </div>
+            </div>  
+                
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 d-none d-sm-block d-sm-none d-md-block car">
+                <div class="input-group d-flex align-self-center inp">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text rounded" id="btnGroupAddon"><i class="bi bi-search"></i></div>
+                    </div>
+                    <input  type="text" class="form-control bg-light" placeholder="Username" aria-label="" aria-describedby="btnGroupAddon">
+                </div>
+            
+                <div class="card bg-light rounded-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="titulo-card">
+                                <h5 class="card-title d-flex ">Talvez Você Curta</h5>
+                            </div>
+                            <div class="d-flex flex-row bd-highlight">
+                                <img  src="https://img.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg?t=st=1651284874~exp=1651285474~hmac=b1572edf02bb8d0a30e8a2c6dc8a3e1909beb5cbce1339fedf61db7edb024b5e&w=740" class="rounded-circle   float-start img2" alt="...">
+                                <a class="align-self-end flex-fill bd-highlight" href="#" class="card-text ">Carlos</a>
+                            <button type="button" class="btn btn-primary rounded-pill btn-sm flex-fill bd-highlight btn-mergem">Seguir</button>
+            
+                            </div>
+                        
+                        </div>
+            
+                        <div class="card-body">
+                            <div class="d-flex flex-row bd-highlight">
+                                <img  src="https://img.ibxk.com.br/2019/02/17/17124052466014.jpg" class="rounded-circle   float-start img2" alt="...">
+                                <a class="align-self-end flex-fill bd-highlight" href="#" class="card-text ">Paulo</a>
+                            <button type="button" class="btn btn-primary rounded-pill btn-sm flex-fill bd-highlight btn-mergem">Seguir</button>
+            
+                            </div>
+                        </div>
+            
+                        <div class="card-body">
+                            <div class="d-flex flex-row bd-highlight">
+                                <img  src="https://arita.com.br/wp-content/uploads/2020/08/pessoa-expansiva-principais-caracteristicas-desta-personalidade.jpg" class="rounded-circle   float-start img2" alt="...">
+                                <a class="align-self-end flex-fill bd-highlight" href="#" class="card-text ">Ana</a>
+                            <button type="button" class="btn btn-primary rounded-pill btn-sm flex-fill bd-highlight btn-mergem">Seguir</button>
+            
+                            </div>
+                        </div>
+                        <a class="m-3" href="#">Mostrar Mais</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="./profile.js"></script>
+</body>
+
+</html>
