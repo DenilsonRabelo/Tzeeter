@@ -1,16 +1,76 @@
-const tamanho = document.querySelector('#texto').maxLength;
-let spanTamanho = document.querySelector(".tamanhoAgora").textContent = 200;
-let aux2 = document.querySelector(".tamanhoAgora").textContent
-aux2 = Number(aux2)
+const nada1 = document.querySelector(".nada")
 
-document.querySelector('#texto').addEventListener("input" , () => {
-    const aux = document.querySelector('#texto').value
-    let aux3 = aux2 - aux.length
-    document.querySelector(".tamanhoAgora").textContent = aux3
-    if (aux3 < 0){
-        document.querySelector(".tamanhoAgora").style.color = "red"
-        document.querySelector(".comment").style.border = "1px solid red";
-    }else if (aux3 >= 0){
-        document.querySelector(".tamanhoAgora").style.color = "black"
+const showInfos = () => {
+    document.querySelector('#texto').addEventListener("input", () => {
+        let tamanhoTexto = document.querySelector('#texto').value
+        setTexto(tamanhoTexto)
+        btnSendEvent(tamanhoTexto)
+        avisoModal(tamanhoTexto, nada1)
+    })
+}
+
+showInfos()
+
+//evento de disable do botão
+const btnSendEvent = (tamanhoTexto) => {
+    let btn = document.getElementById("btn-enviar")
+    if (contador(140, tamanhoTexto) < 0){
+        btn.setAttribute('disabled', '')
+    }else if (contador(140, tamanhoTexto) > 139){
+        btn.setAttribute('disabled', '')
+    }else {
+        btn.removeAttribute('disabled')
     }
-})
+}
+
+
+
+//Area para dar set no texto
+const setTexto = (tamanhoTexto) => {
+    if (tamanhoTexto == 0) {
+        document.querySelector(".tamanhoAgora").textContent = ""
+    } else {
+        let tamanho = document.querySelector(".tamanhoAgora")
+        tamanho.textContent = contador(140, tamanhoTexto)
+        setColor(tamanho, contador(140, tamanhoTexto))
+    }
+}
+
+//Contador do span
+const contador = (valorSpan, tamanhoTexto) => {
+    return valorSpan - tamanhoTexto.length
+}
+
+
+//area para dar set na cor do span
+const setColor = (tamanho, valorSpanAtual) => {
+    if (tamanho.value != 0) {
+        if (valorSpanAtual < 0) {
+            document.querySelector(".tamanhoAgora").style.color = "rgb(255, 0, 0)"
+        } else if (valorSpanAtual <= 40 && valorSpanAtual >= 0) {
+
+            document.querySelector(".tamanhoAgora").style.color = "rgb(255, 200, 0)"
+
+        } else if (valorSpanAtual > 41) {
+            document.querySelector(".tamanhoAgora").style.color = "black"
+        }
+    }
+}
+
+
+const avisoModal = (tamanhoTexto, modal) => {
+        const mod = document.querySelector(".existe")
+        if (mod === null && tamanhoTexto.length > 140){
+            let div = document.createElement("div")
+            div.classList.add("alert","alert-warning","existe")
+            div.textContent = "Limite de caracteres atigindos"
+            modal.appendChild(div)
+        }else if (mod !== null && tamanhoTexto.length <= 140){
+            document.querySelector(".existe").remove()
+            
+        }
+}
+
+
+
+

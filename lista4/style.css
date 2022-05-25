@@ -10,9 +10,6 @@ body {
 
 
 
-
-
-
 .car {
     padding-top: 20px;
 }
@@ -53,6 +50,11 @@ body {
     margin-bottom: 20px;
 }
 
+.img-perfil-home {
+    width: 64px;
+    height: 64px;
+}
+
 .img {
     width: 70px;
     height: 70px;
@@ -88,12 +90,13 @@ body {
 
 .info, .statistics {
     padding-left: 0rem ;
-    margin-bottom: 0rem;
+
     
 }
 
 .info li, .statistics li {
     padding-right: 1rem;
+    list-style: none;
 }
 
 
@@ -265,35 +268,52 @@ textarea {
 }
 
 .formulario {
-    margin-top: 90px;
+    margin-top: 20px;
 }
 
-.texto-reply {
-    color: rgb(29, 155, 240);
-}
+
 
 .texto-reply1 {
     text-decoration: none;
+    display: inline-block;
 }
+
+
+.texto-reply1:hover {
+    background: rgb(29, 156, 240);
+    border-radius: 10px;
+}
+
+
 
 .texto-reply-principal {
     padding-bottom: 15px;
 }
 
 .profi li a i{
-    text-align: center;
-    text-align: center;
     font-size: 20px;
     color: black;
+    text-align: center;
 }
+
 .profi li a {
-    
-    padding-left: 5px;
+    display: flex;
+    align-items: center;
 }
+
 
 .profi li {
     text-decoration: none;
     list-style: none;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profi li:hover {
+    background-color: rgb(29, 155, 240);
+    border-radius: 10px;
 }
 
 .tamanhoAgora {
@@ -304,5 +324,18 @@ textarea {
 
 .profi-2 li {
     list-style: none;
-    padding-left: 15px;
+}
+
+.profi-2 li i{
+    list-style: none;
+    color: black;
+}
+
+.more:hover{
+    background-color: rgb(29, 155, 240);
+    border-radius: 10px;
+}
+
+.btn-conteiner-env {
+    margin-left: 10px;
 }
