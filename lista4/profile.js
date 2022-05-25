@@ -1,19 +1,36 @@
-const nada1 = document.querySelector(".nada")
+const modal = document.querySelector(".nada")
+const modal2 = document.querySelector(".nada2")
+
 
 const showInfos = () => {
     document.querySelector('#texto').addEventListener("input", () => {
         let tamanhoTexto = document.querySelector('#texto').value
-        setTexto(tamanhoTexto)
-        btnSendEvent(tamanhoTexto)
-        avisoModal(tamanhoTexto, nada1)
+        const spanTamanho = document.querySelector(".tamanhoAgora")
+        setTexto(tamanhoTexto, spanTamanho)
+        btnSendEvent(tamanhoTexto, "btn-enviar")
+        avisoModal(tamanhoTexto, modal)
     })
+    if (document.querySelector('#texto2')){
+    document.querySelector('#texto2').addEventListener("input", () => {
+        let tamanhoTexto2 = document.querySelector('#texto2').value
+        const spanTamanho2 = document.querySelector(".tamanhoAgora2")
+        setTexto(tamanhoTexto2, spanTamanho2)
+        btnSendEvent(tamanhoTexto2, "btn-enviar2")
+        avisoModal(tamanhoTexto2, modal2)
+    })
+    }
 }
 
 showInfos()
 
+
+
+
+
+
 //evento de disable do botão
-const btnSendEvent = (tamanhoTexto) => {
-    let btn = document.getElementById("btn-enviar")
+const btnSendEvent = (tamanhoTexto, nomebtn) => {
+    let btn = document.getElementById(nomebtn)
     if (contador(140, tamanhoTexto) < 0){
         btn.setAttribute('disabled', '')
     }else if (contador(140, tamanhoTexto) > 139){
@@ -26,11 +43,11 @@ const btnSendEvent = (tamanhoTexto) => {
 
 
 //Area para dar set no texto
-const setTexto = (tamanhoTexto) => {
+const setTexto = (tamanhoTexto, tamanhospan) => {
     if (tamanhoTexto == 0) {
-        document.querySelector(".tamanhoAgora").textContent = ""
+        tamanhospan.textContent = ""
     } else {
-        let tamanho = document.querySelector(".tamanhoAgora")
+        let tamanho = tamanhospan
         tamanho.textContent = contador(140, tamanhoTexto)
         setColor(tamanho, contador(140, tamanhoTexto))
     }
@@ -46,13 +63,13 @@ const contador = (valorSpan, tamanhoTexto) => {
 const setColor = (tamanho, valorSpanAtual) => {
     if (tamanho.value != 0) {
         if (valorSpanAtual < 0) {
-            document.querySelector(".tamanhoAgora").style.color = "rgb(255, 0, 0)"
+            tamanho.style.color = "rgb(255, 0, 0)"
         } else if (valorSpanAtual <= 40 && valorSpanAtual >= 0) {
 
-            document.querySelector(".tamanhoAgora").style.color = "rgb(255, 200, 0)"
+            tamanho.style.color = "rgb(255, 200, 0)"
 
         } else if (valorSpanAtual > 41) {
-            document.querySelector(".tamanhoAgora").style.color = "black"
+            tamanho.style.color = "black"
         }
     }
 }
