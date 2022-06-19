@@ -1,0 +1,40 @@
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #808080;
+}
+
+
+.form {
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.texto-main {
+    padding: 20px 20px 0px 20px;
+}
+
+
+
+.infos {
+    margin-bottom: 10px;
+    padding: 20px 20px 0px 20px;
+    align-items: center;
+}
+
+.img-login{
+
+    height: 50px;
+    width: 50px;
+}
+
+.btn-infos {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+

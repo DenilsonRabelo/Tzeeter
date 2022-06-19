@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+
+
+.car {
+    padding-top: 20px;
+}
+
+.form-control {
+    width: 100px;
+}
+
+.titulo-card {
+    padding-bottom: 20px;
+}
+
+.tt:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+}
+
+.pae {
+    padding-left: 10px;
+}
+
+
+
+
+.img-logo {
+    padding-bottom: 10px;
+}
+
+.img2 {
+    width: 48px;
+    height: 48px;
+}
+
+.img-perfil {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.img-perfil-home {
+    width: 64px;
+    height: 64px;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+}
+
+.itens-nav  li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(15, 20, 25);
+    
+}
+
+.itens-nav  li a i {
+    margin-right: 20px;
+}
+
+.itens-nav  li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.conteiner-perfil {
+    width: 100%;
+    border-left: solid 1px rgba(15, 25, 20, 0.1);
+    border-right: solid 1px rgba(15, 25, 20, 0.1);
+}
+
+.itens-nav li:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 15px;
+}
+
+.info, .statistics {
+    padding-left: 0rem ;
+
+    
+}
+
+.info li, .statistics li {
+    padding-right: 1rem;
+    list-style: none;
+}
+
+
+
+.info > li a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+}
+
+
+
+.info > li a:hover {
+    border-bottom: 1px solid black;
+}
+
+
+.tt { 
+    border-top: solid 1px rgba(15, 25, 20, 0.1);
+    padding-bottom: 30px;
+}
+
+.png {
+    margin-top: 20px;
+}
+
+
+
+.publicacoes  {
+    list-style: none;
+
+    box-shadow: 1px 1px 4px black;
+}
+
+.publicacoes a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.publicacoes a:hover {
+    background-color:rgba(15, 25, 20, 0.1);
+}
+
+
+
+
+
+.statistics li a, .info li a  {
+    text-decoration: none;
+    color: rgb(83, 100, 113) !important;
+    font-weight: 500 !important;
+}
+
+.statistics li a span:nth-child(1){
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+
+.statistics li a:hover{
+    border-bottom: 1px solid black;
+}
+
+.reacoes a i {
+    margin-right: 10px;
+}
+
+.inp {
+    padding-bottom: 10px;
+}
+
+.reacoes a{
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    font-size: 18px;
+}
+
+.bi-chat:hover{
+    background-color: rgba(29, 156, 240, 0.199);
+    border-radius: 10px;
+}
+
+.bi-share:hover {
+    background-color: rgba(0, 186, 124, 0.233);
+    border-radius: 10px;
+}
+.bi-heart:hover{
+    background-color: rgba(249, 24, 129, 0.233) ;
+    border-radius: 10px;
+}
+
+.bi-download:hover {
+    background-color: rgba(29, 156, 240, 0.336);
+    border-radius: 10px;
+}
+
+.comentario:hover:nth-child(1) {
+    fill:  rgba(29, 155, 240, 1);
+    color:  rgba(29, 155, 240, 1);
+}
+
+.partilhar svg:hover, .partilhar:hover {
+    fill: rgba(0, 186, 124, 1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.coracao svg:hover, .coracao:hover {
+    fill: rgba(249, 24, 128, 1);
+    color: rgba(249, 24, 128, 1);
+}
+
+.baixar svg:hover, .baixar:hover {
+    fill: rgba(29, 155, 240, 1);
+    color: rgba(29, 155, 240, 1);
+}
+
+
+#id {
+    color: rgb(15, 20, 25);
+}
+
+#nick {
+    color: rgb(83, 100, 113);
+}
+
+.biografia {
+    color: rgb(15, 20, 25);
+}
+
+.date {
+    padding-top: 20px;
+    color: rgb(83, 100, 113);
+}
+
+.tweet {
+    color: rgb(15, 20, 25);
+    padding-left: 25px;
+}
+
+.btn-mergem {
+    margin-right: 10px;
+}
+
+.edit {
+    border-radius: 20px;
+}
+
+.profi {
+    padding-left: 0px;
+}
+
+textarea {
+    width:100%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    overflow-y: hidden;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+.comment {
+    resize: none;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+
+
+.texto-reply1 {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.texto-reply1:hover {
+    background: rgb(29, 156, 240);
+    border-radius: 10px;
+}
+
+
+
+.texto-reply-principal {
+    padding-bottom: 15px;
+}
+
+.profi li a i{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.profi li a {
+    display: flex;
+    align-items: center;
+}
+
+
+.profi li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profi li:hover {
+    background-color: rgb(29, 155, 240);
+    border-radius: 10px;
+}
+
+.tamanhoAgora {
+    text-align: center;
+}
+
+
+
+.profi-2 li {
+    list-style: none;
+}
+
+.profi-2 li i{
+    list-style: none;
+    color: black;
+}
+
+.more:hover{
+    background-color: rgb(29, 155, 240);
+    border-radius: 10px;
+}
+
+.btn-conteiner-env {
+    margin-left: 10px;
+}
+
+
