@@ -55,9 +55,24 @@
                         Isso não sera exibido publicamente.Confirme sua prorpia idade, mesmo sé essa conta for de empresa, de um animal de estimação ou outro
                     </span>
                 </div>
-                <div class="form-floating infos-data">
-                        <input type="date" id="start" class="form-control text-left mr-2" required>
-                        <label class="ml-3 form-control-placeholder" id="start-p" for="start">Sua data de nascimento</label>
+                <div class="d-flex flex-row justify-content-between">
+                    <div class="form-floating w-75">
+                        <select class="form-select dias t" id="floatingSelect" aria-label="Floating label select example">
+                        
+                        </select>
+                        <label for="floatingSelect">Dias</label>    
+                    </div>
+                    <div class="form-floating w-100">
+                        <select class="form-select mes t" id="floatingSelect1" aria-label="Floating label select example">
+                        <option value="" selected></option>
+                        </select>
+                        <label for="floatingSelect1">Mes</label>
+                    </div>
+                    <div class="form-floating w-100">
+                        <select class="form-select anos" id="floatingSelect2" aria-label="Floating label select example">
+                        </select>
+                        <label for="floatingSelect1">Ano</label>
+                    </div>
                 </div>
                 <div class="d-flex flex-row infos-checkd">
                     <span>receba e-mails sobre sua atividade no Twitter e recomendações</span>
