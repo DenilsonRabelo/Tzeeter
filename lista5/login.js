@@ -54,16 +54,14 @@ function email1(){
 }
 
 
-(() => {
-    const forms = document.querySelector('.needs-validation')
-    
-      forms.addEventListener('submit', event => {
-        if (!forms.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-  
-        form.classList.add('was-validated')
-        })
-  })()
+const forms = document.querySelector(".needs-validation");
+
+forms.addEventListener("submit", (event) => {
+  if (!forms.checkValidity()) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  forms.classList.add("was-validated");
+});
 
