@@ -16,7 +16,7 @@ senha.addEventListener("input", () => {
 
 test.forEach((e) => {
     e.addEventListener("change", () => {
-        if(email.classList.contains("is-valid") && senha.classList.contains("is-valid") || (email.classList.contains("teste") && senha.classList.contains("is-valid"))){
+        if(email.classList.contains("is-valid") && senha.classList.contains("is-valid") || email.classList.contains("teste") && senha.classList.contains("is-valid")){
             btn.removeAttribute("disabled");
         }else {
             btn.setAttribute("disabled", "");
@@ -41,15 +41,29 @@ function email1(){
     }else {
         email.classList.remove("teste")
     }
-    if(email.value.includes("@gmail.com")){
+    if(email.value.includes("@")){
         email.classList.remove("is-invalid")
         email.classList.add("is-valid")
     }if (email.value.length == 0){
         email.classList.remove("is-valid")
         email.classList.remove("is-invalid")
-    }else if (!email.value.includes("@gmail.com")){
+    }else if (!email.value.includes("@")){
         email.classList.remove("is-valid")
         email.classList.add("is-invalid")
     }
 }
+
+
+(() => {
+    const forms = document.querySelector('.needs-validation')
+    
+      forms.addEventListener('submit', event => {
+        if (!forms.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+        })
+  })()
 

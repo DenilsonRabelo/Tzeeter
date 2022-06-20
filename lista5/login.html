@@ -35,18 +35,18 @@
                     </div>
                 </div>
                   <div class="form-floating m-3">
-                    <input type="password" class="form-control senha teste" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control senha teste" minlength="1" id="floatingPassword" placeholder="Password" required>
                     <label for="floatingPassword">Senha</label>
                     <div class="invalid-feedback">
                         informe uma senha valida
                     </div>
                     <a href="#">Esqueceu a senha</a>
                    </div>
+                   <div class="btn-infos">
+                       <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" >Entrar</button>
+                       <span>Não tem conta ? <a href="./cadastro.html">Inscreva-se</a></span>
+                   </div>
             </form>
-            <div class="btn-infos">
-                <button type="button" class="btn btn-primary btn-lg rounded-pill w-100" disabled>Entrar</button>
-                <span>Não tem conta ? <a href="./cadastro.html">Inscreva-se</a></span>
-            </div>
         </div>
     </div>
     <script src="./login.js"></script>
