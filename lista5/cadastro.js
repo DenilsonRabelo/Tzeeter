@@ -131,29 +131,28 @@ function anos(dia, mes) {
 }
 
 
-const forms = document.querySelector(".needs-validation");
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
 
-forms.addEventListener("submit", (event) => {
-  if (!forms.checkValidity()) {
-    event.preventDefault();
-    event.stopPropagation();
-  }
-
-  forms.classList.add("was-validated");
-});
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
 
 
 let senha1;
 let senha2
 document.querySelector(".senha1").addEventListener("input", () => {
     senha1 = document.querySelector(".senha1").value
-    if(senha1 == senha2){
-      document.querySelector(".senha2").classList.remove("is-invalid")
-      document.querySelector(".senha1").classList.remove("is-invalid")
-    }else {
-      document.querySelector(".senha2").classList.add("is-invalid")
-      document.querySelector(".senha1").classList.add("is-invalid")
-    }
+    
 })
 
 document.querySelector(".senha2").addEventListener("input", () => {
