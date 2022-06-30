@@ -137,7 +137,25 @@ forms.addEventListener("submit", (event) => {
   if (!forms.checkValidity()) {
     event.preventDefault();
     event.stopPropagation();
+    if(senha1 != senha2){
+      document.querySelector("#senhaconfirme").setCustomValidity("was-validated");
+    }else {
+      document.querySelector("#senhaconfirme").setCustomValidity("");
+    }
   }
 
   forms.classList.add("was-validated");
 });
+
+
+let senha1;
+let senha2
+document.querySelector(".senha1").addEventListener("input", () => {
+    senha1 = document.querySelector(".senha1").value
+})
+
+document.querySelector(".senha2").addEventListener("input", () => {
+  senha2 = document.querySelector(".senha2").value
+})
+
+
